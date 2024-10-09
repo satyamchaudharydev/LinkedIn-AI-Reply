@@ -2,4 +2,5 @@
 
 Linked Ai Reply
 
-[Download the video](./showcase.mov)
+[Watch Video](https://youtu.be/09C9I5Apx40)
+
