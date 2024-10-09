@@ -1,7 +1,7 @@
 import React from "react";
 import  { createRoot } from "react-dom/client";
 import "~/assets/tailwind.css";
-import Generate from "@/components/Generate";
+import GenerateButton from "@/components/GenerateButton";
 
 export default defineContentScript({
   matches: ['*://*.linkedin.com/*'],
@@ -19,7 +19,7 @@ export default defineContentScript({
           parent.appendChild(buttonContainer);
           
           const root = createRoot(buttonContainer);
-          root.render(<Generate />);
+          root.render(<GenerateButton />);
         }
       });
     };
@@ -31,7 +31,6 @@ export default defineContentScript({
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.type === 'childList') {
-           console.log("calling handleMessageContainers");
           handleMessageContainers();
         }
       });

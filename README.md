@@ -1,3 +1,5 @@
 # WXT + React
 
-This template should help get you started developing with React in WXT.
+Linked Ai Reply
+
+[Download the video](./showcase.mov)
